@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search UI</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<h3 class="text-muted">Harmony Distribution Center</h3>
+
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"> Search </a></li>
+				<li><a href="#"> Orders </a></li>
+				<li><a href="#"> Returns </a></li>
+			</ul>
+			<ul class="nav nav-pills pull-right">
+				<li><a href="#"> Logout </a></li>
+
+
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<form class="form-productSearch" role="form">
+
+			<h2 class="form-productSearch-heading">Wandering Minstrel Search Engine</h2>
+			
+			<input class="form-control" type="text" autofocus="" name="pID"
+			placeholder="Product ID"></input> 
+				
+			<input class="form-control"
+			type="text" name="product" placeholder="Product"></input> 
+			
+			<input class="form-control"
+			type="text" name="price" placeholder="Price"></input> 
+			
+			<input class="form-control"
+			type="text" name="quantity" placeholder="Quantity"></input> 
+			
+			
+			<button class="btn btn-lg btn-primary btn-block" type="submit">
+
+				Search</button>
+		</form>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
