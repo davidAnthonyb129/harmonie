@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../assets/ico/favicon.ico" rel="shortcut icon"></link>
+<title>Page Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+p.ex1 {
+	margin-top: 0.5cm;
+}
+
+p.ex2 {
+	margin-top: 1cm;
+}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<div class="container">
+
+				<h3 class="text-muted">Harmonie Distribution Center</h3>
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"> Search </a></li>
+					<li><a href="#"> Orders </a></li>
+					<li><a href="#"> Returns </a></li>
+				</ul>
+				<ul class="nav nav-pills pull-right">
+					<li><a href="#"> Logout </a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		Insert Content Here!!!!
+
+
+
+
+		<div class="panel-footer">
+			<p>© Austin Community College/Cogent Java Devlopment Capstone
+				2014</p>
+		</div>
+	</div>
+</body>
+</html>
