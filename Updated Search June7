@@ -1,0 +1,271 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search UI</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+p.ex1 {
+	margin-top: 0.5cm;
+}
+
+p.ex2 {
+	margin-top: 1cm;
+}
+
+p.ls1 {
+	margin-left: 1cm;
+}
+/*
+thead, tbody { display: block; }
+
+tbody {
+    height: 100px;       /* Just for the demo          */
+    /*overflow-y: auto;    /* Trigger vertical scroll    */
+  /*  overflow-x: hidden;  /* Hide the horizontal scroll */
+/*}
+*/
+
+tr {
+width: 100%;
+display: inline-table;
+}
+
+table{
+ height:175px;              /*<-- Select the height of the table*/
+}
+
+thead, tbody
+{ display: block; }
+
+tbody{
+  overflow-y: scroll;      
+  height: 150px;            /*<-- Select the height of the body*/
+  width: 100%; 
+}
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+
+		<div class="page-header">
+
+			<h3 class="text-muted">Harmonie Distribution Center</h3>
+
+			<ul class="nav nav-pills pull-right">
+				<li><a href="#"> Logout </a></li>
+			</ul>
+
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#"> Search </a></li>
+				<li><a href="#"> Orders </a></li>
+				<li><a href="#"> Returns </a></li>
+			</ul>
+
+		</div>
+
+		<div class="container">
+
+			<form role="search">
+
+				<h2 class="form-productSearch-heading">Wandering Minstrel
+					Search Engine</h2>
+
+				<div class="form-group">
+					<div class="col-sm-3">
+						<p class="ex1">
+							<label for="text"> Product ID</label> <input class="form-control"
+								type="text" autofocus="" name="pID" placeholder="Product ID"></input>
+						</p>
+					</div>
+
+
+
+					<div class="col-sm-5">
+						<p class="ex1">
+							<label for="text"> Product</label><br> <input
+								class="form-control" type="text" name="product"
+								placeholder="Product Name"></input>
+						</p>
+					</div>
+
+					<div class="col-sm-2">
+						<p class="ex1">
+							<label for="text">Price</label> <br> <input
+								class="form-control" type="text" name="price"
+								placeholder="Price"></input>
+						</p>
+					</div>
+
+					<div class="col-sm-2">
+						<p class="ex1">
+							<label for="text"> Quantity </label><br> <input
+								class="form-control" type="text" name="quantity"
+								placeholder="Quantity"></input>
+						</p>
+					</div>
+
+					<div class="col-sm-12">
+						<p class="ex1">
+							<label for="text"> Note</label> <br> <input
+								class="form-control" type="text" name="note"
+								placeholder="Include note for product here..."></input>
+						</p>
+					</div>
+					
+				</div>
+				
+				<p class="ex1">
+						<button class="btn btn-lg btn-primary" type="submit">Search</button>
+					</p>
+			</form>
+
+		</div>
+
+
+
+
+		<div class="container">
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Product ID</th>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+				<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+				<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+				<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+				<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+					<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+					<tr>
+					<td>100100</td>
+					<td>Guitar</td>
+					<td>$99.99</td>
+					<td>5</td>
+				</tr>
+				
+				</tbody>
+				
+			</table>
+
+			<!-- 
+
+						
+Found this while looking how to make a scrollable table
+Probably not exactly what we need, but it looks like an example to set up for
+adding items to the list, specifically the "var row" line
+
+ $(function() {
+    for (var i = 0; i < 20; i++) {
+        var a = Math.floor(10 * Math.random());
+        var b = Math.floor(10 * Math.random());
+        
+        var row = $("<tr>").append($("<td>").html(a + " + " + b + " ="))
+                           .append($("<td>").html(a + b));
+        $("tbody").append(row);
+    }
+});
+
+Preliminary variable place holders 
+				<tr>
+					<td>
+						 ${pID}
+					</td>
+					<td>
+						${name}
+					</td>
+					<td>
+						$ ${price}
+					</td>
+					<td>
+						$ ${quantity}
+					</td>
+				</tr>
+-->
+		</div>
+		
+		<div class="container">
+			<div class="page-header">
+
+				<h1>Product Picture</h1>
+
+			</div>
+			<img class="img-thumbnail" alt="200x200" data-src="holder.js/200x200"
+				style="width: 200px; height: 200px;" src="data:image"></img>
+		</div>
+		<br></br>
+	<br></br>
+	<div class="panel-footer">
+		<p>© Austin Community College/Cogent Info Tech Java Devlopment
+			Capstone 2014</p>
+
+	</div>
+		
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	
+</body>
+</html>
