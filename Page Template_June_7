@@ -27,37 +27,51 @@ p.ex1 {
 p.ex2 {
 	margin-top: 1cm;
 }
+
+/*Scrolling table dimensions*/
+tr {
+	width: 100%;
+	display: inline-table;
+}
+
+table {
+	height: 175px; /*<-- Select the height of the table*/
+}
+
+thead,tbody {
+	display: block;
+}
+
+tbody {
+	overflow-y: scroll;
+	height: 150px; /*<-- Select the height of the body*/
+	width: 100%;
+}
 </style>
 
 </head>
 <body>
 	<div class="container">
 		<div class="page-header">
-			<div class="container">
 
-				<h3 class="text-muted">Harmonie Distribution Center</h3>
+			<h3 class="text-muted">Harmonie Distribution Center</h3>
 
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#"> Search </a></li>
-					<li><a href="#"> Orders </a></li>
-					<li><a href="#"> Returns </a></li>
-				</ul>
-				<ul class="nav nav-pills pull-right">
-					<li><a href="#"> Logout </a></li>
-				</ul>
-			</div>
+			<ul class="nav nav-pills pull-right">
+				<li><a href="#"> Logout </a></li>
+			</ul>
+
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#"> Search </a></li>
+				<li><a href="#"> Orders </a></li>
+				<li><a href="#"> Returns </a></li>
+			</ul>
+
 		</div>
 
-
-
-		Insert Content Here!!!!
-
-
-
-
+		Insert Content Here!!!! <br></br> <br></br>
 		<div class="panel-footer">
-			<p>© Austin Community College/Cogent Java Devlopment Capstone
-				2014</p>
+			<p>© Austin Community College/Cogent Info Tech Java Devlopment
+				Capstone 2014</p>
 		</div>
 	</div>
 </body>
