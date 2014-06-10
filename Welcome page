@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+     <title>Welcome to Harmonie Distribution Inc</title>
+     <link href="/css/bootstrap.min.css" rel="stylesheet">
+     <script src="/scripts/jquery.min.js"></script>
+     <script src="/js/bootstrap.min.js"></script>
+</head>
+   <style>
+     html,body{
+               height:100;
+               background-color:#eee}
+               
+     h1{
+        font-family:Arial,sans-serif
+        font-size:60%;
+        color:#404040 } 
+    image {
+        float:center;
+        margin: 30px 60px;
+          }
+  </style>
+  
+  <body>
+    <table>
+    <tr>
+    <td>
+    <img src="C:\Users\Hema\Desktop\J2eefiles\ProductInventory\WebContent\images\ACC.jpg" class="img-rounded"> 
+    </td>
+    <td>
+      <div class="jumbotron">
+         <h1 class="text-center">Harmonie Distribution Inc</h1>
+      </div>
+      </td>
+      <td>
+      <img src="C:\Users\Hema\Desktop\J2eefiles\ProductInventory\WebContent\images\cogent.jpg" class="img-rounded">
+      </td>
+    </tr>
+    </table>
+      <br>
+      <div class="image">
+      <img src="C:\Users\Hema\Desktop\J2eefiles\ProductInventory\WebContent\images\prod_inven.png" class="img-rounded"> 
+      </div>
+    <br>
+     <div class="text-center">
+     <button type="button" class="btn btn-primary">Log In</button>
+     </div>
+     <br><br>
+<div class="panel-footer">
+			<p>© Austin Community College/Cogent Info Tech Java Devlopment Capstone 2014</p>
+		</div>
+
+</body>
+</html>
