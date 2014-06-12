@@ -1,0 +1,12 @@
+External Spec
+Business Logic/Product Search
+
+The Product Search “interface” contains 1 static method to retrieve data from the UI’s search fields’ queries called pDBQuery(), which will return an ArrayList of each search field’s data respectively to the Product Search Servlet.  
+
+The Product Search Servlet uses both doGet and doPost methods.  The doPost method contains a case/switch statement, with the only case at the time, being for the behavior of the search button.  
+
+Inside this case statement for the search button, a variable is created for each search field on the UI side (pID, pL, pH, name, qL, qH, and notes).  A series of if statements will then determine that the data passed 1. Does exist, and 2. Is not empty.  All of which being surrounded by a try/catch block.
+
+An ArrayList of type Object named “products”, will be created and will be assigned the result of the queries by way of the pDBQuery() method.  The ArrayList will pass the appropriate search field queries to the database. 
+
+A session object is then created using the request.getSession() method.  Finally the ArrayList “products” is set as a session attribute allowing the ArrayList to be accessible throughout the session.
